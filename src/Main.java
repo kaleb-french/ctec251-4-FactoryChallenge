@@ -1,10 +1,15 @@
 public class Main {
     static void main() {
-        SimpleEnemyFactory sef = new SimpleEnemyFactory();
-        Enemy skelly = sef.createEnemy("skeleton");
-        Enemy gobby = sef.createEnemy("goblin");
+        EnemySpawner fs = new ForestSpawner();
+        EnemySpawner ds = new DungeonSpawner();
+        Enemy skelly = ds.createEnemy("skeleton");
+        Enemy slimey = ds.createEnemy("slime");
+        Enemy wolfy = fs.createEnemy("wolf");
+        Enemy gobby = fs.createEnemy("goblin");
 
         skelly.attack();
         gobby.attack();
+        slimey.attack();
+        wolfy.attack();
     }
 }
