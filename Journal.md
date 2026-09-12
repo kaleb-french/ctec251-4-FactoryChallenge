@@ -9,3 +9,7 @@ This in a game could allow categories for spawning or spawn enemies base on what
 Phase 2-
 when using inheritance to create these factory method classes, you are merely creating a new class under the same base class. This allows much of the code and calls to be very interchangeable and can be used in methods polymorphically where a EnemySpawner is needed.
 If you have a method that needs a spawner passed in you can still create new subclasses from the EnemySpawner base and they will work just fine. When I switched from the SimpleFactory to the FactoryMEthod style pattern only thing I had to change for goblin and skeleton with which instance they needed to be called from.
+
+Phase 3-
+The abstract factory takes concrete implementations that have predefined groupings for the equipment so when the constructor is ran it guarrenties a matching set. It makes it as easy and spawning the enemy with a magicFactory or warriorFactory and it always will get the expecting returned set.
+
