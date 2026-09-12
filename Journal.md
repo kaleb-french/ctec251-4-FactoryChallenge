@@ -13,3 +13,5 @@ If you have a method that needs a spawner passed in you can still create new sub
 Phase 3-
 The abstract factory takes concrete implementations that have predefined groupings for the equipment so when the constructor is ran it guarrenties a matching set. It makes it as easy and spawning the enemy with a magicFactory or warriorFactory and it always will get the expecting returned set.
 
+Phase 4-
+The abstraction of only relying on base types through the factories allows these enemy spawns to be used polymophically and more often, with rewriting anything.
